@@ -1,0 +1,72 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Bookshelf</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <header id="headbar">
+        <h1>myReadingList.net</h1>
+    </header>
+    <main>
+        <section class="add-book-section card">
+            <h2>Input Book</h2>
+            <form id="addBook">
+                <div class="input">
+                    <label for="inputBookTitle">Title</label>
+                    <input type="text" id="inputBookTitle" required>
+                </div>
+                <div class="input">
+                    <label for="inputAuthor">Author</label>
+                    <input type="text" id="inputAuthor" required>
+                </div>
+                <div class="input">
+                    <label for="inputYear">Year</label>
+                    <input type="number" max="2022" id="inputYear" required>
+                </div>
+                <div class="inline">
+                    <input type="checkbox" id="inputBookIsComplete">
+                    <label for="inputBookIsComplete">Completed reading.</label>
+                </div>
+                <div class="input">
+                    <button id="submitBook"><i class="material-icons md-18">library_add</i> Add to
+                        shelf</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="search-book-section card">
+            <h2>Search Book</h2>
+            <form id="searchBook">
+                <div>
+                    <label for="searchBookTitle">Title</label>
+                    <input id="searchBookTitle" type="text">
+                    <button id="searchSubmit" type="submit" class="material-icons md-24">search</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="book-shelf">
+            <h2>Unfinished Read</h2>
+            <div id="incompleteBookshelfList" class="book-list">
+            </div>
+        </section>
+
+        <section class="book-shelf">
+            <h2>Finished Read</h2>
+            <div id="completeBookshelfList" class="book-list">
+            </div>
+        </section>
+
+    </main>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,193 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../assets/library-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#headbar {
+    background-color: rgb(140, 60, 10);
+    height: 70px;
+    text-align: center;
+    padding: 15px 0;
+    color: aliceblue;
+    margin: 0;
+}
+
+main {
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 60%;
+    min-width: 320px;
+    background-image: url('../assets/woodtexture-3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px 0;
+    border-radius: 5px;
+    color: whitesmoke;
+}
+
+.card {
+    background-image: url('../assets/woodtexture-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 90%;
+    min-width: 310px;
+    margin: 10px auto;
+    margin-top: 20px;
+    padding: 5px 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+#addbook {
+    align-items: center;
+    font-size: 1.3em;
+}
+
+
+
+#addbook input {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    font-size: 0.8em;
+}
+
+#addbook>.inline {
+    display: flex;
+    align-items: center;
+    font-size: 0.8em;
+}
+
+#addbook>.inline>input {
+    width: 25px;
+}
+
+#addbook>.input>#submitBook {
+    padding: 4px;
+    font-size: 0.8em;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-image: url('../assets/woodtexture-2.jpg');
+    color: aliceblue;
+}
+
+#submitBook .material-icons.md-18 {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+#searchBook #searchBookTitle {
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 0.8em;
+    padding: 5px;
+    margin: 0 5px
+}
+
+button {
+    cursor: pointer;
+}
+
+
+#searchBook button {
+    border: 1px solid black;
+    border-radius: 50%;
+    background-image: url('../assets/woodtexture-2.jpg');
+    margin: 0;
+}
+
+#searchBook .material-icons.md-24 {
+    font-size: 24px;
+    color: white;
+}
+
+
+main .book-shelf {
+    width: 90%;
+    min-width: 310px;
+    margin: 10px auto;
+    margin-top: 20px;
+    padding: 8px;
+    background-image: url('../assets/woodtexture-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+.book-shelf>h2 {
+    text-align: center;
+}
+
+.book-shelf>.book-list>.book_item {
+    width: 100%;
+    min-width: 280px;
+    margin: 10px auto;
+    padding: 5px;
+    background-image: url('../assets/woodtexture-3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    color: rgb(140, 60, 10);
+    display: flex;
+}
+
+.bookInner {
+    align-content: flex-start;
+    flex-grow: 3;
+}
+
+.action {
+    align-content: flex-end;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.check-button {
+    background: url('../assets/check_circle_black_24dp.svg');
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    border: none;
+    margin: auto;
+}
+
+.check-button:hover {
+    background: url('../assets/check_circle_black_24dp_fill.svg');
+    background-size: contain;
+}
+
+.delete-button {
+    background: url('../assets/delete_black_24dp.svg');
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    border: none;
+    margin: auto;
+}
+
+.delete-button:hover {
+    background: url('../assets/delete_black_24dp_fill.svg');
+    background-size: contain;
+}
+
+.undo-button {
+    background: url('../assets/restart_alt_black_24dp.svg');
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    border: none;
+    margin: auto;
+}
